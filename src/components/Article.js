@@ -22,7 +22,8 @@ function Article(props) {
     }
   
     function plus() {
-      props.addToCart()
+      const newObject = {name: name, unitPrice: unitPrice,  quantity: 1, price : unitPrice}
+      props.addToCart(newObject)
         if (price +unitPrice <=5000){
             setPrice(price + unitPrice);
             setQuantity(quantity + 1);

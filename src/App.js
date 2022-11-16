@@ -39,11 +39,12 @@ function App() {
   function resetList(){
     setList(data)
   }
-  function addToCart(){
-    console.log("ADDING TO CART ")
+  function addToCart(newObject){
+
+    setCartData([ ...cartData,newObject])
   }
   function  removeFromCart(){
-
+    setCartData([])
     console.log("REMOVED FROM CART !!!")
   }
 

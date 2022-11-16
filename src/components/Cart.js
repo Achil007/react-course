@@ -8,7 +8,7 @@ function Cart(props) {
   useEffect(() => {
     //alert("list changed");
     setAddedList(
-      [{name : "YASSINE", unitPrice: 500, quantity:1, price: 0}]
+      list
     );
   }, [list]);
   
